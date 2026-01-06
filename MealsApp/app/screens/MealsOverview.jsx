@@ -16,7 +16,8 @@ const MealsOverview = () => {
     function mealPressHandler() {
       router.push({
         pathname: '/screens/MealDetails',
-        params: { mealName: itemData.item.title }
+        params: { mealName: itemData.item.title,
+                  id: itemData.item.id}
       });
     }
     return (
